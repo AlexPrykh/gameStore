@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "realName": "Some Name",
+      "id": 1,
+      "role": "USER",
+      "email": "email@email.com",
+      "balance": 0.0,
+      "bonusBalance": 0.0
+    },
+    {
+      "realName": "Some Name",
+      "id": 1,
+      "role": "ADMIN",
+      "email": "email2@email.com",
+      "balance": 0.0,
+      "bonusBalance": 0.0
+    }
+  ]
+}

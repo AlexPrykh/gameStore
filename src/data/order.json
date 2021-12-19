@@ -1,0 +1,14 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1
+    }
+  ]
+}

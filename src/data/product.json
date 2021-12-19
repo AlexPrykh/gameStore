@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Some Name",
+      "genre": "ACTION",
+      "gameCopyType": "PHYSICAL",
+      "gameType": "GAME",
+      "publisher": "Some Author",
+      "copiesAvailable": 1,
+      "price": 0.0
+    },
+    {
+      "name": "Some Name",
+      "genre": "RPG",
+      "gameCopyType": "DIGITAL",
+      "gameType": "SUBSCRIPTION",
+      "publisher": "Some Author",
+      "copiesAvailable": 1,
+      "price": 0.0
+    }
+  ]
+}

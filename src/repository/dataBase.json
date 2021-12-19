@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "email@email.com"
+    },
+    {
+      "id": 2,
+      "email": "email2@email.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "type": "GAME"
+    },
+    {
+      "id": 2,
+      "type": "SUBSCRIPTION"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 2
+    }
+  ]
+}
