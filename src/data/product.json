@@ -5,6 +5,7 @@
     "gameCopyType": "PHYSICAL",
     "gameType": "GAME",
     "publisher": "Some Author",
+    "id": 1,
     "copiesAvailable": 1,
     "price": 0.00
   },
@@ -14,6 +15,7 @@
     "gameCopyType": "DIGITAL",
     "gameType": "SUBSCRIPTION",
     "publisher": "Some Author",
+    "id": 1,
     "copiesAvailable": 1,
     "price": 0.00
   }

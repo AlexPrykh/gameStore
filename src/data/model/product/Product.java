@@ -8,17 +8,19 @@ public abstract class Product {
     private GameCopyType gameCopyType;
     private final GameType gameType;
     private String publisher;
+    private final Long id;
     private Integer copiesAvailable;
     private Double price;
 
 
     public Product(String name, Genre genre, GameCopyType gameCopyType, GameType gameType,
-                   String publisher, Integer copiesAvailable, Double price) {
+                   String publisher, Long id, Integer copiesAvailable, Double price) {
         this.name = name;
         this.genre = genre;
         this.gameCopyType = gameCopyType;
         this.gameType = gameType;
         this.publisher = publisher;
+        this.id = id;
         this.copiesAvailable = copiesAvailable;
         this.price = price;
     }
@@ -104,5 +106,9 @@ public abstract class Product {
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getGameCopyType());
+    }
+
+    public Long getId() {
+        return id;
     }
 }

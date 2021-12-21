@@ -6,9 +6,9 @@ public class Subscription extends Product {
     private Integer days;
 
     public Subscription(String name, Genre genre, GameCopyType gameCopyType, GameType gameType,
-                        String publisher, Integer copiesAvailable, Double price,
+                        String publisher, Long id, Integer copiesAvailable, Double price,
                         Integer days) {
-        super(name, genre, gameCopyType, gameType, publisher, copiesAvailable, price);
+        super(name, genre, gameCopyType, gameType, publisher, id, copiesAvailable, price);
         this.days = days;
     }
 

@@ -7,9 +7,9 @@ public class InGameMoney extends Product {
     private String currency;
 
     public InGameMoney(String name, Genre genre, GameCopyType gameCopyType, GameType gameType,
-                       String publisher, Integer copiesAvailable, Double price,
+                       String publisher, Long id, Integer copiesAvailable, Double price,
                        Integer amount, String currency) {
-        super(name, genre, gameCopyType, gameType, publisher, copiesAvailable, price);
+        super(name, genre, gameCopyType, gameType, publisher, id, copiesAvailable, price);
         this.amount = amount;
         this.currency = currency;
     }

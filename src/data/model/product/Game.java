@@ -7,8 +7,8 @@ public class Game extends Product {
     private Date releaseDate;
 
     public Game(String name, Genre genre, GameCopyType gameCopyType, GameType gameType,
-                Date releaseDate, String publisher, Integer copiesAvailable, Double price) {
-        super(name, genre, gameCopyType, gameType, publisher, copiesAvailable, price);
+                Date releaseDate, String publisher, Long id, Integer copiesAvailable, Double price) {
+        super(name, genre, gameCopyType, gameType, publisher, id, copiesAvailable, price);
         this.releaseDate = releaseDate;
     }
 

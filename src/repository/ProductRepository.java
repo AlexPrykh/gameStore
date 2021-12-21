@@ -4,15 +4,13 @@ import data.model.product.GameCopyType;
 import data.model.product.GameType;
 import data.model.product.Genre;
 import data.model.product.Product;
-import data.model.user.User;
 
 import java.io.*;
 import java.util.*;
 
 public class ProductRepository {
-    private static final int PRODUCT_ROW_WORDS_COUNT = 7;
+    private static final int PRODUCT_ROW_WORDS_COUNT = 8;
     List<Product> products = new ArrayList<>();
-    List<User> users = new ArrayList<>();
     private String fileName;
 
     public ProductRepository(String fileName) {
@@ -58,10 +56,11 @@ public class ProductRepository {
                 Genre genre = Genre.valueOf(productValues[1]);
                 GameCopyType gameCopyType = GameCopyType.valueOf(productValues[2]);
                 GameType gameType = GameType.valueOf(productValues[3]);
-                String publicher = productValues[4];
-                Integer copiesAvailable = Integer.valueOf(productValues[5]);
-                Double price = Double.valueOf(productValues[6]);
-                parsedProduct.add(new Product(name, genre, gameCopyType, gameType, publicher, copiesAvailable,
+                String publisher = productValues[4];
+                Long id = Long.valueOf(productValues[5]);
+                Integer copiesAvailable = Integer.valueOf(productValues[6]);
+                Double price = Double.valueOf(productValues[7]);
+                parsedProduct.add(new Product(name, genre, gameCopyType, gameType, publisher, id, copiesAvailable,
                         price) {
                 });
             }
@@ -85,10 +84,10 @@ public class ProductRepository {
         }
     }
 
-    Optional<User> findId(Long id) {
-        for (User user : users) {
-            if (id.equals(user.getId())) {
-                return Optional.of(user);
+    Optional<Product> findId(Long id) {
+        for (Product product : products) {
+            if (id.equals(product.getId())) {
+                return Optional.of(product);
             }
         }
         return Optional.empty();
@@ -126,4 +125,5 @@ public class ProductRepository {
         }
         return filteredProduct;
     }
+
 }
