@@ -1,15 +1,16 @@
 package data.model.product;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class AddOn extends Product {
     private AddOnType type;
 
-    public AddOn(String name, Date releaseDate, String publisher, Double price, AddOnType type) {
-        super(name, releaseDate, publisher, price);
+    public AddOn(String name, Genre genre, GameCopyType gameCopyType, GameType gameType, String publisher, Integer copiesAvailable, Double price, AddOnType type) {
+        super(name, genre, gameCopyType, gameType, publisher, copiesAvailable, price);
         this.type = type;
     }
+
+
 
     @Override
     public GameType getGameType() {

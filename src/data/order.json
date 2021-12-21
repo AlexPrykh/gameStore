@@ -1,14 +1,9 @@
-{
-  "orders": [
-    {
-      "id": 1,
-      "userId": 1,
-      "productId": 1
-    },
-    {
-      "id": 1,
-      "userId": 1,
-      "productId": 1
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "date": "31.11.2001",
+    "productId": 1,
+    "status": "NEW"
+  }
+]
