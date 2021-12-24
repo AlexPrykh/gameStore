@@ -17,7 +17,7 @@ public class ProductRepository {
         this.fileName = fileName;
     }
 
-    public void initProducts() throws IOException {
+    public void loadProducts() throws IOException {
         try (Reader reader = new BufferedReader(new FileReader(fileName))) {
             File file = new File(fileName);
 
@@ -60,13 +60,14 @@ public class ProductRepository {
                 Long id = Long.valueOf(productValues[5]);
                 Integer copiesAvailable = Integer.valueOf(productValues[6]);
                 Double price = Double.valueOf(productValues[7]);
+
                 parsedProduct.add(new Product(name, genre, gameCopyType, gameType, publisher, id, copiesAvailable,
                         price) {
                 });
             }
 
             this.products = parsedProduct;
-            System.out.println("Loaded library from file: " + fileName);
+            System.out.println("Product loaded from file: " + fileName);
         }
     }
 
